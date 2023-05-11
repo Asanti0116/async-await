@@ -1,0 +1,33 @@
+/* #cards-img img{
+    position: absolute;
+} */
+/* basic styles below, prob better to Green Socks animations to accomplish this */
+
+#cards-img {
+    position: relative;
+    width: 100px;
+    height: 140px;
+  }
+
+#cards-img img {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    transition: transform 0.2s ease-in-out;
+    }
+
+#cards-img img:first-child {
+    transform: rotate(0deg);
+
+    }
+
+
+#cards-img img:not(:first-child):nth-child(odd) {
+  transform: rotate(5deg);
+
+}
+
+#cards-img img:not(:first-child):nth-child(even) {
+  transform: rotate(-5deg);
+
+}
